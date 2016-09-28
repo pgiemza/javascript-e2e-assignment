@@ -1,0 +1,24 @@
+{
+  "name": "mewe-e2e-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.14.0",
+    "nightwatch": "^0.9.8",
+    "selenium-standalone": "^5.7.2"
+  },
+  "scripts": {
+    "e2e-setup": "node node_modules/selenium-standalone/bin/selenium-standalone install",
+    "test": "node node_modules/nightwatch/bin/nightwatch",
+    "postinstall": "npm run e2e-setup"
+  },
+  "keywords": [
+    "mewe",
+    "e2e"
+  ],
+  "author": "Paweł Giemza",
+  "license": "ISC"
+}
